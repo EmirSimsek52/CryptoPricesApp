@@ -21,6 +21,8 @@ const Item = ({ item }) => {
           <Text style={styles.colors}> {item.symbol}</Text>
           <Text style={styles.colors}> Name: {item.name}</Text>
           <Text style={styles.colors}> Price: {item.quote.USD.price}$</Text>
+          <Text style={styles.colors}> 24h % : {item.quote.USD.percent_change_24h}</Text>
+          <Text style={styles.colors}> 30d % : {item.quote.USD.percent_change_30d}</Text>
         </View>
       </View>
      
@@ -47,9 +49,10 @@ const styles = StyleSheet.create({
     
   },
   colors:{
-    color:'white',
+     color:'white',
     backgroundColor:'purple',
-    padding:5
+    padding:5,
+    fontSize:20
     
   }
 });
