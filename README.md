@@ -1,2 +1,2 @@
-# CryptoPrices
+# CryptoPricesApp
   Cryptocurrencies Current Prices
