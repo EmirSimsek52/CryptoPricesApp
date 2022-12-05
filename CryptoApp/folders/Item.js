@@ -2,7 +2,41 @@ import React from "react";
 import  { useRef, useEffect } from 'react';
 import { View, Text, Image, StyleSheet,Animated } from "react-native";
 
+
 const Item = ({ item }) => {
+  
+  const DayChange = () => {
+    if(item.quote.USD.percent_change_24h<0){
+    return (
+      <View >
+        <Text style={styles.colors1}>  24h % : {item.quote.USD.percent_change_24h}</Text>
+      </View>
+    );
+    }
+    else if (item.quote.USD.percent_change_24h>0){
+      return(
+      <View >
+      <Text style={styles.colors}>  24h % : {item.quote.USD.percent_change_24h}</Text>
+    </View>
+      );
+    }
+  }
+  const MonthChange = () => {
+    if(item.quote.USD.percent_change_30d<0){
+    return (
+      <View >
+        <Text style={styles.colors1}>  30d % : {item.quote.USD.percent_change_30d}</Text>
+      </View>
+    );
+    }
+    else if (item.quote.USD.percent_change_30d>0){
+      return(
+      <View >
+      <Text style={styles.colors}>  30d % : {item.quote.USD.percent_change_30d}</Text>
+    </View>
+      );
+    }
+}
   return (
     <>
       <FadeInView>
@@ -18,11 +52,11 @@ const Item = ({ item }) => {
         </View>
         <View style={styles.texts}>
             
-          <Text style={styles.colors}> {item.symbol}</Text>
-          <Text style={styles.colors}> Name: {item.name}</Text>
-          <Text style={styles.colors}> Price: {item.quote.USD.price}$</Text>
-          <Text style={styles.colors}> 24h % : {item.quote.USD.percent_change_24h}</Text>
-          <Text style={styles.colors}> 30d % : {item.quote.USD.percent_change_30d}</Text>
+          <Text style={{color:'white',backgroundColor:'purple',fontSize:20,padding:5}}> {item.symbol}</Text>
+          <Text style={{color:'white',backgroundColor:'purple',fontSize:20,padding:5}}> Name: {item.name}</Text>
+          <Text style={{color:'white',backgroundColor:'purple',fontSize:20,padding:5}}> Price: {item.quote.USD.price}$</Text>
+          <DayChange></DayChange>
+         <MonthChange></MonthChange>
         </View>
       </View>
      
@@ -48,14 +82,26 @@ const styles = StyleSheet.create({
    
     
   },
+  
   colors:{
-     color:'white',
-    backgroundColor:'purple',
+    color:'white',
+    backgroundColor:'limegreen',
+    padding:5,
+    fontSize:20
+    
+  },
+  colors1:{
+    color:'white',
+    backgroundColor:'crimson',
     padding:5,
     fontSize:20
     
   }
+
 });
+
+
+
 const FadeInView = (props) => {
   const fadeAnim = useRef(new Animated.Value(0)).current  
 
