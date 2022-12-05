@@ -1,6 +1,6 @@
 # CryptoPricesApp
   Cryptocurrencies Current Prices(TOP 100)<br/>
-  ![resim1](https://user-images.githubusercontent.com/104012238/205632671-0b858c76-3b79-45d7-a18e-39bf5784989f.jpg)
-  ![resim2](https://user-images.githubusercontent.com/104012238/205632724-c705d3ec-c27c-48d0-bb52-ddeb18537e24.jpg)<br/>
-  ![resim3](https://user-images.githubusercontent.com/104012238/205632792-0fc9d34f-5a34-426b-9cc1-ed876af58a67.jpg)
-  ![resim4](https://user-images.githubusercontent.com/104012238/205632855-54de3043-7b02-44a2-9202-0173b6edb8df.jpg)
+  ![resim1](https://user-images.githubusercontent.com/104012238/205760035-1b4bffe0-55ef-412a-a1be-ab36c7f4bc0b.jpg)
+  ![resim2](https://user-images.githubusercontent.com/104012238/205760161-cda71cba-f7a1-4bce-af40-a29f84c6c878.jpg)<br/>
+  ![resim3](https://user-images.githubusercontent.com/104012238/205760268-071e395b-622c-4a85-8643-3b29d6bb91f4.jpg)
+  ![resim4](https://user-images.githubusercontent.com/104012238/205760331-899cd905-dab8-4bee-b266-5ee3d8828b5e.jpg)
